@@ -1,42 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>Expense Tracker</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Flow</title>
 
-    <div>
-        <label for="inpbx">Expense name: </label>
-        <input type="text" id="inpbx">
+    <link rel="stylesheet" href="index.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="head1">Cash Flow</div>
+    <main>
+      <section class="sec1">
+        
+        <div class="div2">
+        <label for="inpbx">Expense name:</label>
+        <input type="text" id="inpbx" placeholder="enter expense name"/>
+        </div>
+        
+
+        <div class="div3">
         <label for="inpbx2">Amount: </label>
-        <input type="text" id="inpbx2">
+        <input type="text" id="inpbx2" placeholder="enter amount"/>
+        </div>
+        
 
+        <div class="div4">
         <label for="inpdate">Date: </label>
-        <input type="date" id="inpdate">
+        <input type="date" id="inpdate" />
+        </div>
+    
 
-
+        <div class="div1">
         <button id="addbtn">Submit</button>
-
+    <button id="dltbtn">Delete List</button>
     </div>
 
-    <div><button id="dltbtn">Delete List</button></div>
+      </section>
 
-    <div>
+
+      <div>
         <table id="table">
-            <tr>
-                <th>Expense</th>
-                <th>Amount</th>
-                <th>Date</th>
-            </tr>
-            
-
+          <tr>
+            <th>Expense</th>
+            <th>Amount</th>
+            <th>Date</th>
+          </tr>
         </table>
-    </div>
+      </div>
+    </main>
 
     <script src="index.js" defer></script>
-</body>
+  </body>
 </html>

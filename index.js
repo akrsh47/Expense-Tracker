@@ -6,6 +6,9 @@ const table_doc = document.getElementById("table");
 const dltbtn_doc = document.getElementById("dltbtn");
 
 let exp_list = [];
+inpbx_doc.value="";
+  inpbx2_doc.value="";
+  inpdate_doc.value="";
 
 if (localStorage.length != 0) {
   exp_list = JSON.parse(localStorage.getItem("expense"));
@@ -21,12 +24,17 @@ addbtn_doc.addEventListener("click", function () {
   add_list();
   addrow();
   addtostorage();
+  inpbx_doc.value="";
+  inpbx2_doc.value="";
+  inpdate_doc.value="";
 });
 
 function add_list() {
   let expName = inpbx_doc.value;
   let amount = inpbx2_doc.value;
   let date = inpdate_doc.value;
+
+  
 
   let list_obj = { exp: `${expName}`, amt: `${amount}`, dte: `${date}` };
 
