@@ -16,7 +16,7 @@ body {
 
 .head1 {
   text-align: center;
-  color: rgb(36, 177, 36);
+  color: rgb(50, 194, 50);
   font-size: 3.5rem;
   margin: 1rem;
   text-shadow: 4px 4px 2px black;
@@ -265,6 +265,8 @@ footer {
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation: border 1.5s 0.5s ease-in-out infinite;
+  -webkit-animation:border 1.5s 0.5s ease-in-out infinite;
 }
 
 .sec3 div {
@@ -340,4 +342,32 @@ footer {
     border-left: 6px dotted white;
     border-bottom: 6px dotted transparent;
   }
+}
+
+@media screen and (min-width:900px){
+    .sec1{
+        width:30%;
+        font-size: 1.5rem;
+    }
+
+    input{
+        font-size: 1.3rem;
+    }
+    #addbtn{
+        font-size: 1.5rem;
+    }
+    #dltbtn{
+        font-size: 1.5rem;
+    }
+
+    .sec3 div{
+        width: 30%;
+        margin: auto;
+        font-size: 1.5rem;
+
+    }
+
+    table{
+        font-size: 1.5rem;
+    }
 }
