@@ -14,6 +14,8 @@ inpbx_doc.value = "";
 inpbx2_doc.value = "";
 inpdate_doc.value = "";
 
+
+
 if (localStorage.length != 0) {
   exp_list = JSON.parse(localStorage.getItem("expense"));
 } else {
@@ -28,6 +30,16 @@ if (exp_list.length != 0) {
 }
 
 addbtn_doc.addEventListener("click", function () {
+
+  if(isNaN(inpbx2_doc.value)==true){
+    alert("enter a number value!")
+    inpbx2_doc.value=""
+    
+    
+  }
+
+  
+
   table_doc.classList.remove("displayNone");
   add_list();
   addrow();
@@ -40,11 +52,18 @@ addbtn_doc.addEventListener("click", function () {
 
 function add_list() {
   let expName = inpbx_doc.value;
+  
   let amount = inpbx2_doc.value;
+ 
   let date = inpdate_doc.value;
 
+  
+  
   let list_obj = { exp: `${expName}`, amt: `${amount}`, dte: `${date}` };
 
+  
+
+ 
   exp_list.push(list_obj);
 }
 
@@ -69,10 +88,12 @@ function addrow() {
     inpbx2_doc.value == "" ||
     inpdate_doc.value == ""
   ) {
-    alert("hey");
+    alert("please enter all values !");
   } else {
     table_doc.appendChild(row);
   }
+
+  
 }
 
 function addtostorage() {
