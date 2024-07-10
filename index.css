@@ -127,12 +127,16 @@ input:hover{
     color: white;
     border: 4px double whitesmoke;
     transition-duration: 0.3s;
+    border-radius: 0.5rem;
+
 }
 input:focus{
     background-color: #171717;
     color: white;
     border: 4px double whitesmoke;
     transition-duration: 0.3s;  
+    border-radius: 0.5rem;
+
 }
 
 
@@ -172,10 +176,47 @@ input:focus{
     color: white;
     border: 4px double whitesmoke;
     transition-duration: 0.3s;   
+    border-radius: 0.5rem;
 }
 #inpdate:focus{
     background-color: #171717;
     color: white;
     border: 4px double whitesmoke;
     transition-duration: 0.3s;  
+    border-radius: 0.5rem;
+
+}
+
+table{
+    border: 5px double whitesmoke;
+    margin: 2rem;
+    border-radius: 1rem;
+    
+}
+
+table th{
+   /*  border:2px solid whitesmoke; */
+    padding: 0 1rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    
+}
+
+tr:nth-child(even){
+    background-color: #444444;
+}
+
+td{
+    padding: 0.5rem;
+}
+
+.sec2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td:hover{
+    color: #DA0037;
+    background-color: white;
 }
