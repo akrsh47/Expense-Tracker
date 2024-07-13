@@ -2,7 +2,11 @@
 
     "name":"Cash Flow - expense tracker",
     "short_name":"Cash Flow",
-    "icons":[{"src":"assets/bookicon.png","type":"image/png"}],
+    "icons":[
+        {"src":"assets/icon192x192.png","sizes":"192x192","type":"image/png"},
+
+    {"src":"assets/icon512x512.png","sizes":"512x512","type":"image/png"}
+    ],
     "theme_color":"#444444",
     "background_color":"#171717",
     "display":"standalone",
