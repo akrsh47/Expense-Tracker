@@ -1,0 +1,10 @@
+{
+
+    "name":"Cash Flow - expense tracker",
+    "short_name":"Cash Flow",
+    "icons":[{"src":"assets/bookicon.png","type":"image/png"}],
+    "theme_color":"#444444",
+    "background_color":"#171717",
+    "display":"standalone",
+    "description":"An Expense Tracking App"
+}
