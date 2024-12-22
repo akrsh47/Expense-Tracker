@@ -39,18 +39,21 @@ main {
 
 .div1 {
   display: flex;
-  justify-content: space-between;
+
+  justify-content: center;
+  align-items: center;
   width: 100%;
   /* margin: 1rem; */
 }
 
 .div1 button {
-  width: 100%;
+  width: 50%;
   margin: 0.5rem;
   color: black;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.5rem;
   border: 0;
+
   font-weight: 900;
   border-radius: 0.2rem;
 }
@@ -58,24 +61,47 @@ main {
 #addbtn {
   background-color: rgb(3, 92, 3);
   color: whitesmoke;
+
   transition-duration: 0.4s;
 }
 
 #addbtn:hover {
-  background-color: rgb(245, 245, 245);
-  color: rgb(3, 92, 3);
-  letter-spacing: 0.1rem;
+
+  background-color: rgb(2, 56, 2);
+
 }
+
+#dwn_btn {
+  background-color: rgb(15, 27, 199);
+  color: whitesmoke;
+  transition-duration: 0.4s;
+}
+
+#dwn_btn:hover {
+
+  background-color: rgb(6, 22, 94);
+  transition-duration: 0.4s;
+
+
+}
+
+#dwn_btn:active {
+  background-color: rgb(15, 27, 199);
+}
+
+
+
 #dltbtn {
   background-color: #da0037;
   color: whitesmoke;
+  transition-duration: 0.4s;
+
 }
 
 #dltbtn:hover {
-  color: #da0037;
-  background-color: white;
-  transition-duration: 0.4s;
-  letter-spacing: 0.1rem;
+  background-color: #790421;
+
+
 }
 
 .div2 {
@@ -96,22 +122,27 @@ main {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
 }
+
 .div2:focus {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
 }
+
 .div3:focus {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
 }
+
 .div4:focus {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
 }
+
 .div3:hover {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
 }
+
 .div4:hover {
   transition-duration: 0.5s;
   box-shadow: 5px 5px 0px black;
@@ -145,6 +176,7 @@ input:hover {
   transition-duration: 0.3s;
   border-radius: 0.5rem;
 }
+
 input:focus {
   background-color: #171717;
   color: white;
@@ -188,6 +220,7 @@ input:focus {
   transition-duration: 0.3s;
   border-radius: 0.5rem;
 }
+
 #inpdate:focus {
   background-color: #171717;
   color: white;
@@ -202,9 +235,11 @@ table {
   border-radius: 1rem;
   margin-bottom: 0rem;
 }
+
 .displayNone {
   display: none;
 }
+
 .displayBlock {
   display: block;
 }
@@ -216,8 +251,24 @@ table th {
   letter-spacing: 0.1rem;
 }
 
+table th:nth-child(1),
+table th:nth-child(2) {
+
+  border-right: 2px solid #ededed;
+}
+
+table td:nth-child(1),
+table td:nth-child(2) {
+
+  border-right: 2px solid #ededed;
+}
+
 tr:nth-child(even) {
   background-color: #444444;
+}
+
+tr:nth-child(odd) {
+  background-color: #171717;
 }
 
 td {
@@ -258,6 +309,8 @@ footer {
   padding-bottom: 4rem;
 }
 
+
+
 .animate {
   border: 6px dotted white;
   animation-name: "border";
@@ -266,7 +319,7 @@ footer {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   animation: border 1.5s 0.5s ease-in-out infinite;
-  -webkit-animation:border 1.5s 0.5s ease-in-out infinite;
+  -webkit-animation: border 1.5s 0.5s ease-in-out infinite;
 }
 
 .sec3 div {
@@ -279,6 +332,7 @@ footer {
   letter-spacing: 0.1rem;
   width: 100%;
 }
+
 #ttl {
   white-space: nowrap;
 }
@@ -319,24 +373,28 @@ footer {
     border: 6px dotted transparent;
     border-left: 6px dotted white;
   }
+
   25% {
     border: 6px dotted transparent;
 
     border-top: 6px dotted white;
     border-left: 6px dotted transparent;
   }
+
   50% {
     border: 6px dotted transparent;
 
     border-right: 6px dotted white;
     border-top: 6px dotted transparent;
   }
+
   75% {
     border: 6px dotted transparent;
 
     border-bottom: 6px dotted white;
     border-right: 6px dotted transparent;
   }
+
   100% {
     border: 6px dotted transparent;
     border-left: 6px dotted white;
@@ -344,30 +402,32 @@ footer {
   }
 }
 
-@media screen and (min-width:900px){
-    .sec1{
-        width:30%;
-        font-size: 1.5rem;
-    }
+@media screen and (min-width:900px) {
+  .sec1 {
+    width: 30%;
+    font-size: 1.5rem;
+  }
 
-    input{
-        font-size: 1.3rem;
-    }
-    #addbtn{
-        font-size: 1.5rem;
-    }
-    #dltbtn{
-        font-size: 1.5rem;
-    }
+  input {
+    font-size: 1.3rem;
+  }
 
-    .sec3 div{
-        width: 30%;
-        margin: auto;
-        font-size: 1.5rem;
+  #addbtn {
+    font-size: 1.5rem;
+  }
 
-    }
+  #dltbtn {
+    font-size: 1.5rem;
+  }
 
-    table{
-        font-size: 1.5rem;
-    }
+  .sec3 div {
+    width: 30%;
+    margin: auto;
+    font-size: 1.5rem;
+
+  }
+
+  table {
+    font-size: 1.5rem;
+  }
 }

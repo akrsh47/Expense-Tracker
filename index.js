@@ -31,14 +31,14 @@ if (exp_list.length != 0) {
 
 addbtn_doc.addEventListener("click", function () {
 
-  if(isNaN(inpbx2_doc.value)==true){
+  if (isNaN(inpbx2_doc.value) == true) {
     alert("enter a number value!")
-    inpbx2_doc.value=""
-    
-    
+    inpbx2_doc.value = ""
+
+
   }
 
-  
+
 
   table_doc.classList.remove("displayNone");
   add_list();
@@ -52,18 +52,18 @@ addbtn_doc.addEventListener("click", function () {
 
 function add_list() {
   let expName = inpbx_doc.value;
-  
+
   let amount = inpbx2_doc.value;
- 
+
   let date = inpdate_doc.value;
 
-  
-  
+
+
   let list_obj = { exp: `${expName}`, amt: `${amount}`, dte: `${date}` };
 
-  
 
- 
+
+
   exp_list.push(list_obj);
 }
 
@@ -93,7 +93,7 @@ function addrow() {
     table_doc.appendChild(row);
   }
 
-  
+
 }
 
 function addtostorage() {
@@ -155,3 +155,21 @@ function addAmount() {
 }
 
 footsp_doc.innerText = `${Year}`;
+
+
+// for downloadable pdf
+const dwn_btn_doc = document.getElementById("dwn_btn");
+const exp_tab = document.getElementById("expdf");
+dwn_btn_doc.addEventListener("click", function () {
+  table_doc.style.border = "5px double black";
+
+  html2pdf().from(exp_tab).save('myExpense.pdf');
+  setTimeout(returnTableStyle, 500)
+})
+
+
+
+function returnTableStyle() {
+  table_doc.style.border = "5px double whitesmoke";
+
+}

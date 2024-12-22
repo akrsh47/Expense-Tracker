@@ -1,71 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cash Flow</title>
 
-    <link rel="stylesheet" href="index.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cash Flow</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <link rel="icon" type="image/x-icon" href="assets/bookicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Labrada:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&display=swap"
+    rel="stylesheet" />
 
-    <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/x-icon" href="assets/bookicon.png" />
 
-    <meta name="description" content="expense tracker" />
-    <meta name="author" content="Akarsh" />
-  </head>
-  <body>
-    <div class="head1">Cash Flow</div>
-    <main>
-      <section class="sec1">
-        <div class="div2">
-          <label for="inpbx">Expense name:</label>
-          <input type="text" id="inpbx" placeholder="enter expense name" />
-        </div>
+  <link rel="manifest" href="manifest.json">
 
-        <div class="div3">
-          <label for="inpbx2">Amount: </label>
-          <input type="text" id="inpbx2" placeholder="enter amount" />
-        </div>
+  <meta name="description" content="expense tracker" />
+  <meta name="author" content="Akarsh" />
+</head>
 
-        <div class="div4">
-          <label for="inpdate">Date: </label>
-          <input type="date" id="inpdate" />
-        </div>
+<body>
+  <div class="head1">Cash Flow</div>
+  <main>
+    <section class="sec1">
+      <div class="div2">
+        <label for="inpbx">Expense name:</label>
+        <input type="text" id="inpbx" placeholder="enter expense name" />
+      </div>
 
-        <div class="div1">
-          <button id="addbtn">Submit</button>
-          <button id="dltbtn">Delete List</button>
-        </div>
-      </section>
+      <div class="div3">
+        <label for="inpbx2">Amount: </label>
+        <input type="text" id="inpbx2" placeholder="enter amount" />
+      </div>
 
-      <section class="sec2">
-        <table id="table">
-          <tr>
-            <th>Expense</th>
-            <th>Amount</th>
-            <th>Date</th>
-          </tr>
-        </table>
-      </section>
-    </main>
-    <section class="sec3">
-      <div id="ttl" class="animate">
-        Total Expense:<span id="ttlsp">0&#8377;</span>
+      <div class="div4">
+        <label for="inpdate">Date: </label>
+        <input type="date" id="inpdate" />
+      </div>
+
+      <div class="div1">
+        <button id="addbtn"><i class="fa-solid fa-check"></i></button>
+        <button id="dltbtn"><i class="fa-solid fa-trash"></i></button>
+        <button id="dwn_btn"><i class="fa-solid fa-download"></i></button>
       </div>
     </section>
 
-    <footer>
-      <div>&copy;<span id="footsp"></span><a href="https://github.com/akrsh47"> Akarsh</a></div>
-    </footer>
+    <section class="sec2" id="expdf">
+      <table id="table">
+        <tr>
+          <th>Expense</th>
+          <th>Amount</th>
+          <th>Date</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <section class="sec3">
+    <div id="ttl" class="animate">
+      Total Expense:<span id="ttlsp">0&#8377;</span>
+    </div>
+  </section>
 
-    <script src="index.js" defer></script>
-  </body>
+  <footer>
+    <div>&copy;<span id="footsp"></span><a href="https://github.com/akrsh47"> Akarsh</a></div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="index.js" defer></script>
+</body>
+
 </html>
