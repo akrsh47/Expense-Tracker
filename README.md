@@ -7,6 +7,7 @@ Welcome to Cashflow, your personal expense tracker web application designed to h
 - **Expense Tracking:** Easily track your expenses by entering the expense name, amount, and date.
 - **Total Expense Calculation:** Automatically calculates your total expenses.
 - **User-Friendly Design:** clean interface for seamless user experience.
+- **Downloadable pdf:** You can download your expense list as pdf.
 
 
 

@@ -138,9 +138,14 @@ function getFromStorage() {
 }
 
 dltbtn_doc.addEventListener("click", function () {
-  localStorage.clear();
-  exp_list = [];
-  window.location.reload();
+
+  if (confirm("Are you sure \n you want to delete the list?") == true) {
+
+    localStorage.clear();
+    exp_list = [];
+    window.location.reload();
+  }
+
 });
 
 function addAmount() {
