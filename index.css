@@ -5,7 +5,11 @@
   font-family:monospace,serif;
   font-optical-sizing: auto;
   font-style: normal;
-  color: #ededed;
+  
+}
+
+html{
+  min-height: 100vh;
 }
 
 body {
@@ -13,6 +17,7 @@ body {
   min-height: 100vh;
   background-color: #171717;
   scroll-behavior: smooth;
+  color: #ededed;
 }
 
 .head1 {
@@ -309,6 +314,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 td:hover {

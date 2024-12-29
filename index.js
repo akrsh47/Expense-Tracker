@@ -156,6 +156,8 @@ function addAmount() {
     }
 
     ttlsp_doc.innerHTML = `<b>${totalsum} &#8377;</b>`;
+    ttlsp_doc.style.overflowX="auto"
+    ttlsp_doc.style.color="#fa7f7f"
   }
 }
 
